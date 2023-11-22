@@ -1,0 +1,298 @@
+page_changer{
+    min-height: calc(100vh - 200px);
+    width: 15%;
+    background-color: #020087;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main_acc{
+    min-height: calc(100vh - 200px);
+    width: 85%;
+    /* background-color: #FFFFFF; */
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: #DAF2F9; */
+
+}
+
+
+main_p{
+    min-height: calc(100vh - 200px);
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.profile_pic{
+    width: 130px;
+    height: 130px;
+    border-radius: 65px;
+    background-color: #FFFFFF;
+}
+
+div.prof_p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+div.account_det{
+    margin: 10px 10px 60px 100px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+
+}
+
+.account_det_fields{
+    margin-bottom: 10px;
+}
+
+div.reserve_action{
+    height: 100%;
+    width: 60%;
+    background-color: red;
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.res_pers{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+
+div.res_info{
+    width: 100%;
+    height: 40%;
+    background-color: white;
+}
+
+div.reserve{
+    height: 100%;
+    width: 20%;
+    background-color: purple;
+}
+
+div.card{
+    height: 20%;
+    width: 100%;
+
+    border-radius: 4px;
+    border: 2px black solid;
+    background-color: #DDDDDD;
+
+    display: flex;
+    flex-direction: row;
+}
+
+div.card img{
+    height: 100%;
+    width: 20%;
+    max-width: 20%;
+}
+
+div.card img.person{
+    height: 100%;
+    width: 10%;
+}
+
+
+div.card res_time{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.card notif{
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+a.view_not{
+    width: 10%;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #020087;
+    color: #FFFFFF;
+    border: 1px #FFFFFF solid;
+}
+
+a.view_not:hover{
+    background-color: #FFFFFF;
+    color: #020087;
+    border: 1px #020087 solid;
+}
+
+.approve{
+    display: flex;
+    flex-direction: row;
+
+    width: 20%;
+}
+
+notif p.time_tit{
+    font-size: 40px;
+    text-decoration: none;
+    cursor: none;
+}
+
+notif p.time{
+    text-decoration: none !important;
+    font-size: 14px;
+}
+
+res_time p.time_tit{
+    font-size: 40px;
+    text-decoration: none;
+    cursor: none;
+}
+
+res_time p.time{
+    text-decoration: none !important;
+    font-size: 14px;
+}
+
+p.title{
+    font-size: 60px;
+    font-weight: bold;
+    padding: 30px 30px 30px 30px;
+
+}
+
+p.my_acc{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px 8px 8px 8px;
+}
+
+a.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 33%;
+    border: 2px #FF9945 solid;
+    border-radius: 2px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px 20px 20px 20px;
+    color: #FF9945;
+}
+
+a.page:hover{
+    color: white;
+    border: 1px #FF9945 solid;
+}
+
+div.select{
+    padding: 10px 10px 10px 10px;
+    border: 3px black solid;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.act_butt{
+    width: 100%;
+}
+
+form.update_p div{
+    display: table-row;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 300%;
+}
+
+.pass{
+    display: table-cell;
+    height: 40px;
+    width: 80% ;
+}
+
+.pass_text{
+    display: table-cell;
+    width: 20%; 
+}
+
+@media only screen and (max-width: 1000px) {
+    page_changer{
+        width: 20%;
+    }
+
+    main_acc{
+        width: 80%;
+    }
+
+    div.account_det{
+        margin: 10px 10px 60px 10px;
+        width: 350px;
+    }
+
+    div.card{
+        height: 20%;
+        width: 100%;
+    }
+
+    res_time p.time_tit{
+        font-size: 16px;
+    }
+    
+    res_time p.time{
+        font-size: 10px;
+    }
+
+    .act_butt{
+        width: 62%;
+        font-size: 10px;
+    }
+
+    div.card res_time{
+        width: 24%;
+    }
+
+    div.card img.person{
+        width: 28%;
+    }
+
+    div.card img{
+        width: 28%;
+    }
+
+    page_changer a.page{
+        font-size: 10px;
+    }
+
+    page_changer p.my_acc{
+        font-size: 20px;
+    }
+
+    main_acc p.title{
+        font-size: 30px;
+    }
+}

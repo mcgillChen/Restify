@@ -1,0 +1,284 @@
+body{
+    background-color: #DAF2F9 !important;
+}
+
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hr-no-space{
+    margin-bottom: 0;
+}
+
+.hr-last{
+    margin-bottom: 2px !important;
+}
+
+.page-container{
+    
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    
+}
+
+.section-title1{
+    font-weight: bold;
+    margin-bottom: 1rem !important;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: start;
+
+}
+
+label{
+    font-size: 14px;
+}
+.property-name{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: 30px;
+}
+
+
+
+
+.request-reservation-middle-section-container{
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    max-width: 900px;
+
+    /* background-color: aliceblue; */
+
+
+}
+
+
+
+.information-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 100vh;
+}
+
+
+
+/*left section*/
+.info-left-section{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* background-color: lightblue; */
+    flex: 1.5;
+    margin-left: 1rem;
+}
+
+
+
+.your-trip-row{
+    display: flex;
+    flex-direction: column;
+    flex: 0.2;
+    /* background-color: beige; */
+    /* margin-bottom: 1rem; */
+
+}
+
+.your-trip-row .your-trip-title{
+    display: inline-block;
+}
+
+.paynow-row{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin-bottom: 1rem;
+    /* background-color: blueviolet; */
+}
+
+.cancellation-policy-row{
+    display: flex;
+    flex-direction: column;
+    flex: 0.1;
+    /* background-color: aquamarine; */
+    margin-bottom: 1rem;
+
+}
+
+.contact-host-row{
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    /* background-color: blanchedalmond; */
+    margin-bottom: 1rem;
+
+}
+
+.request-button-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+.disclaimer-row{
+    margin-bottom: 1rem;
+}
+
+
+
+/*right section*/
+.info-right-section{
+    padding: 1rem 1rem 1rem 1rem ;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: start;
+    /* background-color: lightpink; */
+    flex: 0.5;
+    height: fit-content;
+
+    border: 1px solid;
+    border-radius: 20px;
+    border-color: lightgray;
+    background-color: #CCE7F0;
+}
+
+/*rental-unit-card*/
+.reservation-unit-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+        /* background-color: lightpink; */
+
+}
+
+.unit-card-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: lightblue; */
+    flex: 1;
+    margin-top: 1rem;
+}
+
+.unit-card-img-container img{
+    width: 130px;
+    height: 100px;
+}
+
+.unit-card-details{
+    /* background-color: lightseagreen; */
+    flex: 3;
+}
+
+.section-title1-first{
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.price-details-container{
+    margin-top: 1rem;
+}
+
+/*Credit Card Form*/
+.paynow-row{
+    display: flex;
+}
+
+
+
+.input-row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+input{
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: lightgray;
+}
+
+.exp-date-cvv-row{
+    display: flex;
+    column-gap: 5px;
+}
+
+@media(max-width: 500px) {
+    .exp-date-cvv-row {
+      flex-wrap: wrap;
+    }
+}
+
+
+
+/*Messag the host form*/
+.contact-host-row .section-title1{
+    margin-bottom: 0px;
+}
+
+.comment-form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    width: 100%;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: lightgray;
+}
+
+.back{
+    text-decoration: underline;
+}
+
+.back:visited{
+    color: #246578;
+}
+
+
+@media(max-width: 500px) {
+    .information-container{
+        display: block;
+    }
+    .info-left-section{
+        width: 100%;
+    }
+    .info-right-section{
+        width: 100%;
+        align-items: center;
+        height: auto;
+        margin-left: 1rem; 
+        margin-bottom: 1rem;
+        border: 0;
+    }
+    .request-button-row{
+        margin-bottom: 100px;
+    }
+}
+
+
+
+

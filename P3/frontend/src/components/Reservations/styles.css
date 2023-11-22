@@ -1,0 +1,61 @@
+
+
+
+button:hover{
+    background-color:#007EA8;
+    border-color: white;
+    color: white; /*text color*/
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/*Unit cards*/
+.unit-card-container{
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    /* background-color: lightpink; */
+    margin-bottom: 50px;
+    max-width: 280px;
+    min-width: 280px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 0.6rem;
+    margin-right: 1rem;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+
+
+}
+
+.unit-card-date{
+    display: flex;
+    margin-top: 10px;
+    /* background-color: lightpink; */
+}
+
+.unit-card-title{
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+button{
+    width: 100%;
+    bottom: 0;
+    height: 25px ;
+    color: #4DA8DA;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer; 
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+
+}
+
+

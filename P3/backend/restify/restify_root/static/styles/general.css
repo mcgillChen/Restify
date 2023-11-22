@@ -1,0 +1,291 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap');
+
+*{
+    margin:0;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #EEFBFB; */
+
+ }
+
+
+body{
+
+    /*text-color*/
+    /* color: #333333; */
+
+    color: #246578;
+
+    /*Style 1*/
+    background-color: #DAF2F9 !important;
+
+    /*Style 2*/
+    /* background: #f4fbfd; */
+
+    /*style 3*/
+    /* background-color: #93BFCF; */
+
+}
+
+
+.page-container{
+    /* position:relative; */
+    min-height: 100vh;
+}
+
+header{
+    position: relative;
+    height: 68px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    /* margin-bottom: 10px; */
+    color: white;
+    background-color: #6096B4;
+}
+
+
+header .nav{
+    padding-left: 3rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    border: 0px solid black;
+    border-radius: 25px;
+}
+
+.menu{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row-reverse;
+    /* align-items: center; */
+}
+
+.notification-icon{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row-reverse;
+    /* align-items: center; */
+}
+
+#nav0, #nav1, #nav2, #nav3, #nav4, #nav5, #nav6 {
+    color: white;
+}
+
+.pp {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    z-index: 101;
+    align-self: center;
+}
+
+.menu-options{
+
+    display: none;
+}
+
+.menu-option {
+    margin-bottom: .5rem;
+
+}
+
+.menu-option a{
+    color: white;
+    padding:5px;
+    text-decoration: none;
+    margin-bottom:1rem;
+}
+
+.menu-option a:hover{
+    background-color: lightblue;
+    color:#6096b4;
+    z-index: 101;
+    border-radius: 2px;
+}
+
+
+.menu-options:hover, .pp:hover + .menu-options{
+    background-color: #6aabcf;
+    padding: 1rem;
+    position: absolute;
+    padding-right: 2.5rem;
+    padding-top: 4.25rem;
+    border-radius: 10px;
+    margin-top: -5px;
+    z-index: 100;
+    opacity: 95%;
+    display: block;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    bottom: 0;
+    background: lightblue;
+    /* at least128px between content and footer*/
+    margin-top: 128px;
+
+}
+
+.title p{
+    font-weight: bold;
+}
+
+.section-title-40{
+    font-size:35px;
+    font-weight: 500;
+}
+
+.section-title1{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.section-title2{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.section-subtitle-0{
+    font-size: 13px;
+}
+
+.text-9{
+    font-size: 9px;
+}
+.text-12{
+    font-size: 12px;
+}
+
+.text-13{
+    font-size:13px
+}
+
+.text-14{
+    font-size:14px
+}
+
+.text-15{
+    font-size:15px
+}
+
+.text-16{
+    font-size:16px
+}
+
+.text-18{
+    font-size:18px
+}
+/*General Button Styles*/
+
+a:visited{
+    text-decoration: none;
+    }
+
+.btn0{ /*fills 100%*/
+    width: 100%;
+    height: 35px ;
+    color: #4DA8DA;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer; 
+
+
+}
+
+
+
+
+.btn1{/*300 px wide*/
+    width: 300px;
+    height: 35px ;
+    color: #4DA8DA;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer; 
+
+}
+
+
+
+.btn2{/*300 px wide*/
+    width: 250px;
+    height: 35px ;
+    color: #4DA8DA;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer; 
+
+}
+
+
+.btn3{/*300 px wide*/
+    width: 400px;
+    height: 35px ;
+    color: #4DA8DA;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer; 
+
+}
+
+.btn4{ /*for gridbox*/
+    width: 100%;
+    height: 25px ;
+    color: #4DA8DA;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer; 
+}
+
+.btn5{
+    display: block;
+    height: 35px ;
+    color: #4DA8DA;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer; 
+}
+
+
+.btn0:hover, .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover{
+    background-color:#007EA8;
+    border-color: white;
+    color: white; /*text color*/
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+
+
+

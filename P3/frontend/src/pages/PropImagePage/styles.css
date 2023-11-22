@@ -1,0 +1,245 @@
+/* add your css here */
+.title {
+    padding: 1rem;
+}
+
+.title p{
+    font-size:30 ;
+
+}
+
+.title div{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+label {
+    margin-top: 5px;
+}
+
+.prop-setup-form-container {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    max-width: 771.94px;
+    /* width: 100%; */
+    border-radius: 16px;
+    background-color: #CCE7F0;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.prop-setup-form-container form .textarea{
+    width: 100%;
+    max-width: 771.94px;
+    min-width: 500px;
+    height:10rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: none;
+}
+
+.prop-setup-form-container form .submit{
+    /* width: 3rem; */
+    /* flex-basis: 2rem; */
+    display: block;
+    text-align: center;
+    padding:.3rem;
+
+    color: #4DA8DA;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer; 
+}
+
+.prop-setup-main {
+    display:flex;
+    justify-content: center;
+}
+
+input[type="submit"]:hover{
+    /* width: 3rem; */
+    /* flex-basis: 2rem; */
+    background-color:#007EA8;
+    border-color: white;
+    color: white; /*text color*/
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+input[type="submit"]{
+    height: 35px;
+}
+
+.prop-setup-form-container p, .prop-setup-form-container form{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prop-type-container, .rent-type-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.prop-type-container label, .rent-type-container label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border:2px solid white;
+    border-radius: 25px;
+    margin-top: 1rem;
+    text-align: center;
+    /* background-color: ; */
+}
+
+
+.prop-type-container input,  .rent-type-container input{
+    visibility: hidden;
+}
+
+.prop-type-container input:checked + label, .rent-type-container input:checked + label{
+    border:1px solid #a3cddb;
+    color:antiquewhite;
+    padding: 1rem;
+    background-color: #a3cddb;
+}
+
+.prop-location{
+    margin-top: 1rem;
+    display: inline-flex;
+    justify-items: left;
+    align-items: baseline;
+    padding-left: 2rem;
+    padding-right:3rem;
+}
+
+.prop-location label{
+    flex:1;
+}
+#prop-location-address{
+    flex:3;
+    padding:0.5rem;
+}
+
+.prop-struct-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 3rem;
+}
+
+.prop-struct-item{
+    justify-self: center;
+}
+
+.prop-struct-item input{
+    width: 2rem;
+    text-align: center;
+}
+
+.prop-struct-label{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+
+.prop-title-container{
+    margin-top: 1rem;
+}
+
+#prop-title {
+    font-size: medium;
+    padding: 0.25rem;
+}
+
+.prop-title-item, .prop-desc-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#prop-desc {
+    font-size: medium;
+    padding: 0.25rem;
+    resize: none;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.prop-price-container{
+    padding-left: 2rem;
+}
+
+#prop-price{
+    width: 3rem;
+    text-align: center;
+}
+
+#attachments{
+    margin-top: 1rem;
+}
+
+.page-heading a{
+    font-size: 24px;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    text-decoration: underline;
+}
+
+.page-heading a:visited{
+    color: #72a3b2;
+
+}
+
+
+.page-heading {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .prop-location{
+        display: flex;
+        flex-direction: column;
+        /* padding:10rem; */
+
+    }
+
+    #prop-location-address{
+        width: 100%;
+    }
+
+    .prop-type-container, .rent-type-container{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    .page-heading{
+        flex-direction: column;
+    }
+
+  }

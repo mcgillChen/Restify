@@ -1,0 +1,197 @@
+
+
+/* *{
+    color: #EEFBFB;
+
+} */
+
+.page-container{
+    
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+main{
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;  
+    max-width: 900px;
+}
+
+.signup-middle-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: lightblue; */
+    justify-content: center;
+    height: 80vh;
+
+
+}
+
+
+.signup-form-container{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    margin-right: 20rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;  
+    max-width: 900px;
+
+    /* background-color: lightpink; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 771.94px;
+    width: 100%;
+    background-color: #CCE7F0;
+
+
+    border-radius: 16px;
+}
+
+.title div{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+.sign-form{
+    padding: 20px 20px 20px 20px;
+    /* background-color: lightpink; */
+    width: 100%;
+}
+
+.email-row{
+    margin-top: 1rem;
+}
+
+.email-row,.firstname-row, .lastname-row, .phone-row, .password-row, .confirm-password-row, .checkbox-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.5rem;
+/* 
+    background-color: lightgrey;
+    border: 1px solid; */
+}
+
+
+.form-label{
+    display: inline-block;
+    text-align: right;
+    width: 250px;
+    margin-right: 20px;
+    /* background-color: lightblue; */
+}
+
+.email-row input, .password-row input, .firstname-row input, .lastname-row input, .phone-row input, .password-row input, .confirm-password-row input{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    height: 30px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+
+.checkbox-row{
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.checkbox-row p{
+    width: 100%;
+    margin-left: 10px;
+}
+
+
+.submit-button-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.submit-button{
+    width: 400px;
+    height: 25px ;
+}
+
+
+.back-to-login-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+.back-to-login-row p,.back-to-login-row p a {
+    font-size: 16px;
+
+}
+
+
+.login-link{
+    text-decoration: underline;
+}
+
+.login-link:visited{
+    color: #4DA8DA;
+}
+
+@media(max-width: 900px) {
+    .email-row,.firstname-row, .lastname-row, .phone-row, .password-row, .confirm-password-row{
+        display: block;
+        /* flex-direction: row;
+        align-items: center; */
+        margin-bottom: 0.5rem;
+    /* 
+        background-color: lightgrey;
+        border: 1px solid; */
+    }
+    .form-label{
+        text-align: left;
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+    .checkbox-row{
+        display: flex;
+        flex-direction: row;
+    }
+    .checkbox-row label{
+        display: flex;
+        flex: 0.5;
+    }
+    .checkbox-row input{
+        display: flex;
+        flex: 1;
+    }
+    .signup-form-container{
+
+        min-width: 400px;
+    }
+    .btn3{
+        width: 300px !important;
+    }
+    
+
+}

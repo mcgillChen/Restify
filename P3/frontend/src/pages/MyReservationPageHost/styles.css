@@ -1,0 +1,134 @@
+.container{
+    
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+main{
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;  
+    width: 80vw;
+    max-width: 1000px;
+    border-radius: 16px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+
+
+    background-color: #CCE7F0;
+
+    
+}
+
+.sub-headers{
+    display: flex;
+    flex-direction: column;
+    /* background-color: lightcoral; */
+    justify-content: center;
+    align-items: start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 28px;
+    font-weight: 600;
+    
+}
+
+hr{
+    margin-top: 0.8rem !important;
+}
+
+.sub-headers p{
+    font-size: 20px;
+}
+
+.present-reservations{
+    margin-top:40px;
+}
+
+.pending-reservations{
+    margin-top:40px;
+}
+
+.past-reservations{
+    margin-top:40px;
+}
+
+.property-name p{
+    font-size: 30px;
+}
+
+/* .reservation-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+
+} */
+
+
+
+
+button:hover{
+    background-color:#007EA8;
+    border-color: white;
+    color: white; /*text color*/
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 426px){ 
+    /*if 0px<screensize<600px*/
+    .reservation-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        row-gap: 10px; 
+    }
+}
+@media (min-width: 427px) and (max-width: 640px){ 
+    /*if 0px<screensize<600px*/
+    .reservation-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px; 
+    }
+}
+
+@media (min-width: 641px) and (max-width: 850px){ 
+    /*if 0px<screensize<600px*/
+    .reservation-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px; 
+    }
+}
+
+@media (min-width: 851px){ 
+    /*if 0px<screensize<600px*/
+    .reservation-grid{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px; 
+    }
+}
+
+
+
+/* scroll bar */
+
+
+.scrolling-wrapper {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+
+}
+
+
+

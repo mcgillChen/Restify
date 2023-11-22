@@ -1,0 +1,96 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'styles/signup.css' %}">
+{% endblock %}
+
+{% block title %}Signup{% endblock %}
+{% block content %}
+<div class="page-container">
+  
+  <main>
+    <div class="signup-middle-section-container">
+      <section>
+        <div class="signup-form-container">
+          <div class="title">
+            <div>Create an Account</div>
+          </div>
+          <form class="signup-form" action="#" method="post">
+            <div class="email-row">
+              <label class="form-label" for="email">{{form.email.label}}</label>
+              {{form.email}}
+            </div>
+            <div class="firstname-row">
+              <label class="form-label" for="firstname">{{form.first_name.label}}</label>
+              {{form.first_name}}
+            </div>
+            <div class="lastname-row">
+              <label class="form-label" for="lastname">{{form.last_name.label}}</label>
+              {{form.last_name}}
+            </div>
+
+            <div class="phone-row">
+              <label class="form-label" for="phone-number">{{form.phone_number.label}}</label>
+              {{form.phone_number}}
+            </div>
+
+            <div class="phone-row">
+              <label class="form-label" for="username">{{form.username.label}} </label>
+              {{form.username}}
+            </div>
+
+            <div class="password-row">
+              <label class="form-label" for="password"
+                >{{form.password1.label}}</label
+              >
+              {{form.password1}}
+            </div>
+
+            <div class="confirm-password-row">
+              <label class="form-label" for="confirm-password"
+                >{{form.password2.label}}</label
+              >
+              {{form.password2}}
+            </div>
+
+            <div class="checkbox-row">
+              <label class="form-label checkbox" for="consent">
+                <input
+                  type="checkbox"
+                  name="consent"
+                  value="yes"
+                  required
+                />
+              </label>
+              <p>
+                By checking this box, you are agreeing to our terms of
+                service.
+              </p>
+            </div>
+
+            <div class="submit-button-row">
+              <span class="form-label"></span>
+              <div class="button-input">
+                <button type="submit" class="btn3">Sign Up</button>
+              </div>
+            </div>
+          </form>
+
+          <div class="back-to-login-row">
+            <div class="back-to-login-box">
+              <p>
+                Already have an account?
+                <a class="login-link" href="{% url 'accounts:login' %}"> Login</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "./base.html" %} 
+
+{% load static %}
+
+{% block title %}Profile{% endblock %} 
+
+
+{% block styles %}
+ <link rel="stylesheet" href="{% static 'styles/account.css' %}">
+{% endblock %}
+
+
+
+{% block content %}
+<main_p>
+    <page_changer>
+      <p class="my_acc">My Account</p>
+      <div class="select">
+        <a href="notification_prof.html" class="page">Notification Page</a>
+        <a href="approving_page.html" class="page">Approving Page</a>
+        <a href="#" class="page">Edit Profile Page</a>
+      </div>
+    </page_changer>
+    <main_acc>
+      <p class="title">Profile</p>
+      <div class="account_det">
+        <div class="prof_p"> 
+            {% comment %} <img src="./images/trump-circle.png" class="profile_pic"></img> {% endcomment %}
+        </div>
+        <div class="account_det_fields">
+            Username: {{user.username}}
+        </div>
+        <div class="account_det_fields">
+            First Name: {{user.first_name}}
+        </div>
+        <div class="account_det_fields">
+            Last Name: {{user.last_name}}
+        </div>
+        <div class="account_det_fields">
+            Email: {{user.email}}
+        </div>
+        <div class="account_det_fields">
+            Phone Number: {{user.profile.phone_number}}
+        </div>
+      </div>
+    </main_acc>
+    
+  </main_p>
+
+
+{% endblock %}
